@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background-image: url('../Image/photo_2024-10-15_12-47-13.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section a {
+    position: relative;
+    z-index: 1;
+}
+
+#skills .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#portfolio .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .card img {
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: white; /* White text color */
+}
+footer a {
+    color: #61dafb; /* Light blue color for links */
+}
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
